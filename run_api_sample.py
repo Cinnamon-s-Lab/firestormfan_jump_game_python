@@ -15,7 +15,10 @@ App = firestormfan_game_api.App(width, height)
 
 while True:
     b = time.time() #fps制限用
+
+    #入力を与えてフレームを更新、出力する
     r = App.update(keyboard.is_pressed("UP"),keyboard.is_pressed("LEFT"),keyboard.is_pressed("RIGHT"))
+    #出力
     score = r['score']
     bestscore = r['bestscore']
     player_x = r['px']
@@ -24,7 +27,7 @@ while True:
     ground = r['ground']
     sound = r['sound']
     
-    #表示処理
+    #描画処理
     for_show_player = [["・" for i in range(width//dpc)] for j in range(height//dpc)]
     for_show_blocks = [["・" for i in range(width//dpc)] for j in range(height//dpc)]
     if player_x >= 0 and player_x < width and player_y >= 0 and player_y < height:
