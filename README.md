@@ -1,0 +1,2 @@
+# firstormfan_jump_game_python
+ジャンプしてるやつのpython遺書く
