@@ -1,2 +1,2 @@
-# firstormfan_jump_game_python
+# firestormfan_jump_game_python
 ジャンプしてるやつのpython移植
